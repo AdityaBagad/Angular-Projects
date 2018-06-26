@@ -1,0 +1,13 @@
+input{
+    padding: 5px;
+    margin-bottom: 17px;
+    font-size: 15px;
+}
+
+.row{
+    margin: 20px;
+}
+
+.steps li{
+    padding: 15px;
+}

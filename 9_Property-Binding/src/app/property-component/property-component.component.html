@@ -1,0 +1,86 @@
+<div class="row">
+
+  <div class="col fields">
+    <ol type="1">
+
+      <!-- 1. Only textbox-->
+      <li>
+        <input type="text">
+      </li>
+
+
+      <!-- 2. Text box with attribute 'value'-->
+      <li>
+        <input type="text" value="Angular 6">
+      </li>
+
+
+      <!-- 3. Bind 'myId' property to to HTML 'id' property-->
+      <li>
+        <input type="text" [id]="myID" value="Angular 6">
+      </li>
+
+
+      <!-- 4. Bind using String Interpolation -->
+      <li>
+        <input type="text" id="{{myID}}" value="Angular 6">
+      </li>
+
+
+      <!-- 
+          String interpolation works only with String Values.
+                            
+          There are some HTML properties that are boolean properties that we need to bind to.
+      -->
+
+      <!--5. 
+          Bind using for 'disabled' Attribute. 
+          Setting the value 'false' has no effect in 'disabled' attribute. 
+          Because of Boolean Attribute String Interpolation does not work.    
+       -->
+      <li>
+        <input type="text" disabled="false" id="{{myID}}" value="Angular 6">
+      </li>
+
+
+      <!-- 6. Because of Boolean Attribute String Interpolation does not work. -->
+      <li>
+        <input type="text" disabled="{{false}}" id="{{myID}}" value="Angular 6">
+      </li>
+
+
+      <!-- 7.
+          Solution to it is Property Binding.
+          Enclose disabled to Square brackets and set to value to either to true or false.
+      -->
+      <li>
+        <input type="text" [disabled]="false" id="{{myID}}" value="Angular 6">
+      </li>
+
+
+      <!-- 8. Using Dynamic Values for Property Binding -->
+      <li>
+        <input type="text" [disabled]="isDisabled" id="{{myID}}" value="Angular 6">
+      </li>
+
+
+      <!-- 9. Alternate Syntax for Property Binding -->
+      <li>
+        <input type="text" bind-disabled="isDisabled" id="{{myID}}" value="Angular 6">
+      </li>
+
+    </ol>
+
+  </div>
+
+
+  <div class="col steps">
+    <ol type="1" style="float: left;">
+      <h5><li>Right Click on any Input Field and Click Inspect.</li></h5>
+      <h5><li>Go to Console.</li></h5>
+      <h5><li>Enter $0.value to get the value present in the Input Field.</li></h5>
+      <h5><li>Enter $0.getAttribute('value') to get the value of the Attribute of the Input Field.</li></h5>
+    </ol>
+  </div>
+
+</div>
