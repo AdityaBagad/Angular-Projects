@@ -1,0 +1,22 @@
+.style_one{
+    border: 1px solid ;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.style_two{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.style_three{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+button{
+    margin: 15px;
+}

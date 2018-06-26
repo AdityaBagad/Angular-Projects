@@ -1,0 +1,28 @@
+<div style="text-align:center">
+
+
+  <div class="style_one">
+    <!--Binding Style to an Button Event-->
+    <h1 [style.color]="MyColor">Color Binded to Button</h1>
+    <button (click)="toBlueColor()">Blue Color</button>
+    <button (click)="toRedColor()">Red Color</button>
+    <button (click)="toGreenColor()">Green Color</button>
+  </div>
+
+  <div class="style_two">
+    <!--Binding Style to a Condition
+    
+      If the 'IsSet' Value is 'TRUE' it will set the color to 'ORANGE'
+      If the 'IsSet' Value is 'FALSE' it will set the color to 'PURPLE'
+      
+    -->
+    <h1 [style.color]="IsSet ? 'orange' : 'purple'  ">Color Binded to a Condition</h1>
+  </div>
+
+  <div class="style_three">
+    <!--Binding Style to a Color Directly-->
+    <h1 [style.color]=" 'brown' ">Color Directly Binded</h1>
+  </div>
+
+
+</div>
