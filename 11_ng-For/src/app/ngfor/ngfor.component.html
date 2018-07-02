@@ -1,0 +1,13 @@
+<div class="container">
+
+  <div *ngFor="let value of companies">
+    <h3>{{value}}</h3>
+  </div>
+
+  <hr>
+
+  <div *ngFor="let value of companies; index as i">
+    <h3>{{ i }}.{{value}}</h3>
+  </div>
+
+</div>
