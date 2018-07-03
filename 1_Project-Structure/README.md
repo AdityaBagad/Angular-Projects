@@ -1,4 +1,4 @@
-![Project Structure](ProjectStructure.JPG "Project Structure")
+![ProjectStructure](ProjectStructure.JPG "Project Structure")
 
 # ProjectStructure
 
