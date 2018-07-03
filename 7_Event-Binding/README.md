@@ -1,4 +1,4 @@
-![EventBinding](EventBinding.JPG "EventBinding")
+![EventBinding](EventBinding.JPG "Event-Binding")
 
 # EventBinding
 
