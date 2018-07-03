@@ -1,3 +1,5 @@
+![NgFor.JPG](NgFor.JPG "NgFor.JPG")
+
 # NgFor
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
