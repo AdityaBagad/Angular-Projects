@@ -1,4 +1,4 @@
-![Components](Components.JPG "Components")
+![Components](Components.JPG "Component")
 
 # Components
 
