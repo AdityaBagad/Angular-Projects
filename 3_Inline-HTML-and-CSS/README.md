@@ -1,4 +1,4 @@
-![InlineHTMLandCSS](InlineHTMLandCSS.JPG "InlineHTMLandCSS")
+![InlineHTMLandCSS](InlineHTMLandCSS.JPG "InlineHTML&CSS")
 
 # InlineHTMLAndCSS
 
