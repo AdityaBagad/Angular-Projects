@@ -1,3 +1,5 @@
+![Class Binding](ClassBinding.JPG "Class Binding")
+
 # ClassBinding
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
