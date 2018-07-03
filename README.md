@@ -1,7 +1,7 @@
 # Angular-Projects
 This repository contains some basic Angular Applications.
 
-###Prerequisites
+## Prerequisites
 1. Download and Install npm (Node Package Manager) : [Download](https://nodejs.org/en/)
 
 2. Innstall CLI(Command Line Interface) : 
@@ -9,7 +9,7 @@ This repository contains some basic Angular Applications.
 npm install -g @angular/cli
 ```
 
-###Contents
+## Contents
 
 1. [Project Structure](https://github.com/AdityaBagad/Angular-Projects/tree/master/1_Project-Structure)
 2. [Changing Headers](https://github.com/AdityaBagad/Angular-Projects/tree/master/2_Changing-Headers)
