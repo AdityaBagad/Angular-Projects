@@ -1,0 +1,28 @@
+<div class="container">
+  <!-- 1. Use of ngIf in case of hardcoded value-->
+  <h2 *ngIf="true">Hello Angular 6</h2>
+
+  <!-- 2. We can use any property with ngIf-->
+  <h2 *ngIf="flag">Property With Ng-If</h2>
+
+  <!-- 3. We can use if else conditional partition-->
+  <h2 *ngIf="flag; else OtherPart">First If Part</h2>
+
+  <ng-template #OtherPart>
+    <h2>
+      First Else Part
+    </h2>
+  </ng-template>
+
+  <!-- 4. We can use below syntax for if else-->
+  <div *ngIf="flag; then ifblock; else elseblock"></div>
+
+  <ng-template #ifblock>
+    <h2>Second If block</h2>
+  </ng-template>
+
+  <ng-template #elseblock>
+    <h2>Second Else block</h2>
+  </ng-template>
+
+</div>
