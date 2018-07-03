@@ -1,4 +1,4 @@
-![Functions](Functions.JPG "Functions")
+![Functions](Functions.JPG "Function")
 
 # Functions
 
