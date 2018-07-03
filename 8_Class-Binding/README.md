@@ -1,4 +1,4 @@
-![Class Binding](ClassBinding.JPG "Class Binding")
+![Class Binding](ClassBinding.JPG "Class-Binding")
 
 # ClassBinding
 
