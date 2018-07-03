@@ -1,4 +1,4 @@
-![Changing Headers](Changing-Headers.JPG "Changing Headers")
+![Changing Headers](Changing-Headers.JPG "Changing-Headers")
 
 # ChangingHeaders
 
