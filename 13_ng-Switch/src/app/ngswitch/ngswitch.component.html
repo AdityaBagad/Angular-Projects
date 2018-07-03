@@ -1,0 +1,16 @@
+<div class="container">
+  
+  <h2>Which company you work for</h2>
+
+  <div [ngSwitch]="companies">
+
+    <div *ngSwitchCase="'Apple'">I work for Apple</div>
+    <div *ngSwitchCase="'Google'">I work for Google</div>
+    <div *ngSwitchCase="'Tesla'">I work for Tesla</div>
+    <div *ngSwitchCase="'SpaceX'">I work for SpaceX</div>
+
+    <div *ngSwitchDefault>Wrong Selection</div>
+
+  </div>
+
+</div>
