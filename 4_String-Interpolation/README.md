@@ -1,4 +1,4 @@
-![StringInterpolation](StringInterpolation.JPG "StringInterpolation")
+![StringInterpolation](StringInterpolation.JPG "String-Interpolation")
 
 # StringInterpolation
 
