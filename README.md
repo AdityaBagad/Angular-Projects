@@ -3,8 +3,7 @@ This repository contains some basic Angular Applications.
 
 ## Prerequisites
 1. Download and Install npm (Node Package Manager) : [Download](https://nodejs.org/en/)
-
-2. Innstall CLI(Command Line Interface) : 
+2. Install CLI(Command Line Interface) : 
 ```
 npm install -g @angular/cli
 ```
@@ -24,3 +23,7 @@ npm install -g @angular/cli
 11. [Structural Directive - ngFor](https://github.com/AdityaBagad/Angular-Projects/tree/master/11_ng-For)
 12. [Structural Directive - ngIf](https://github.com/AdityaBagad/Angular-Projects/tree/master/12_ng-If)
 13. [Structural Directive - ngSwitch](https://github.com/AdityaBagad/Angular-Projects/tree/master/13_ng-Switch)
+14. [Inter Component Communication](https://github.com/AdityaBagad/Angular-Projects/tree/master/14_Inter-Component-Communication)
+15. [HTTP Data Fetch](https://github.com/AdityaBagad/Angular-Projects/tree/master/15_HTTP-Data-Fetch)
+16. [Services](https://github.com/AdityaBagad/Angular-Projects/tree/master/16_Services)
+17. [Routing](https://github.com/AdityaBagad/Angular-Projects/tree/master/17_Routing)
