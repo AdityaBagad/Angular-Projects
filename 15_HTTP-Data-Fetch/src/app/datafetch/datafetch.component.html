@@ -1,0 +1,8 @@
+<h2>Student Details</h2>
+
+<!-- Display the Student Details using *ngFor Directive -->
+<ul *ngFor="let stud of students">
+    <li>{{ stud.RollNo }} - {{ stud.Name }}</li>
+</ul>
+
+<button (click)="fetchData()">Fetch Data from Server</button>
