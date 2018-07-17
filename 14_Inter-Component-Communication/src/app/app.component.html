@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Angular 6 : Inter Component Communication
+  </h1>
+  <h2>
+    <i>By - Aditya Bagad</i>
+  </h2>
+
+  <div class="container"> 
+    <app-child-component [ParentData]="ParentMessage" (eventEmitter)="receiveEvent($event)" ></app-child-component>
+    <h2>Child To Parent - {{ ChildMessage }}</h2>
+  </div>
+
+</div>
