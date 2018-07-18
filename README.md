@@ -27,3 +27,4 @@ npm install -g @angular/cli
 15. [HTTP Data Fetch](https://github.com/AdityaBagad/Angular-Projects/tree/master/15_HTTP-Data-Fetch)
 16. [Services](https://github.com/AdityaBagad/Angular-Projects/tree/master/16_Services)
 17. [Routing](https://github.com/AdityaBagad/Angular-Projects/tree/master/17_Routing)
+18. [Bootstrap Forms](https://github.com/AdityaBagad/Angular-Projects/tree/master/18_Bootstrap-Forms)
