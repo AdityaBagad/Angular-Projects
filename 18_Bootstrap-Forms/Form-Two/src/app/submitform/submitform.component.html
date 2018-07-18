@@ -1,0 +1,45 @@
+<form class="myForm">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-6">
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="Name" name="StudName" [(ngModel)]="StudName" >
+        </div>
+
+        <div class="form-group">
+          <textarea class="form-control" rows="3" placeholder="Address" name="StudAddress" [(ngModel)]="StudAddress" ></textarea>
+        </div>
+
+        <div class="form-group">
+          <input class="form-control" type="text" placeholder="College Name" name="StudCollege" [(ngModel)]="StudCollege" >
+        </div>
+      </div>
+
+
+      <div class="col-6">
+        <div class="form-group" >
+          <select class="form-control" name="StudGender" [(ngModel)]="StudGender">
+            <option hidden>-- Select Gender --</option>
+            <option *ngFor="let gen of gender" >{{ gen }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input class="form-control" type="tel" placeholder="Mobile Number" name="StudPhone" [(ngModel)]="StudPhone" >
+        </div>
+
+        <div class="form-group">
+          <input class="form-control" type="email" placeholder="Email ID" name="StudEmail" [(ngModel)]="StudEmail" >
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <input (click)="submitForm()" class="btn btn-primary" type="submit" value="Submit">
+
+  <h6>{{ message }}</h6>
+
+</form>
