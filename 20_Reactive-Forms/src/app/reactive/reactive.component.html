@@ -1,0 +1,29 @@
+<div *ngIf="!stud_name || !stud_feedback; else forminfo">
+  <form [formGroup]="feedbackForm" (ngSubmit)="sendFeedback(feedbackForm.value)">
+    <div class="container">
+
+      <div class="form-group">
+        <input type="text" placeholder="Enter your name" class="form-control" formControlName="stud_name">
+      </div>
+
+      <div class="form-group">
+        <textarea type="text" cols="20" rows="5" placeholder="Enter Feedback" class="form-control" formControlName="stud_feedback"></textarea>
+      </div>
+
+      <div>
+        <button class="btn btn-primary" [disabled]="!feedbackForm.valid">Submit Feedback</button>
+      </div>
+
+    </div>
+  </form>
+
+
+</div>
+
+<div class="info">
+  <ng-template #forminfo>
+    <h3>Student Feedback Report</h3>
+    <h4>{{ "Name of the Student : "+stud_name }}</h4>
+    <h4>{{ "Feedback : "+stud_feedback }}</h4>
+  </ng-template>
+</div>
