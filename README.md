@@ -30,3 +30,4 @@ npm install -g @angular/cli
 18. [Bootstrap Forms](https://github.com/AdityaBagad/Angular-Projects/tree/master/18_Bootstrap-Forms)
 19. [Template Driven Forms](https://github.com/AdityaBagad/Angular-Projects/tree/master/19_Template-Driven-Form)
 20. [Reactive Forms](https://github.com/AdityaBagad/Angular-Projects/tree/master/20_Reactive-Forms)
+21. [Custom Directives](https://github.com/AdityaBagad/Angular-Projects/tree/master/21_Custom-Directives)
