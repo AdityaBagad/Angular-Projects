@@ -33,3 +33,4 @@ npm install -g @angular/cli
 21. [Custom Directives](https://github.com/AdityaBagad/Angular-Projects/tree/master/21_Custom-Directives)
 22. [Two Way Binding](https://github.com/AdityaBagad/Angular-Projects/tree/master/22_Two-Way-Binding)
 23. [Template Reference](https://github.com/AdityaBagad/Angular-Projects/tree/master/23_Template-Reference)
+24. [Pipes](https://github.com/AdityaBagad/Angular-Projects/tree/master/24_Pipes)
