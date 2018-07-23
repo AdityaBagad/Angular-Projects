@@ -1,0 +1,45 @@
+<hr>
+
+<h1>Pipes for String </h1>
+<p>{{name}}</p>
+<p>{{"Lowercase : "+(name | lowercase)}}</p>
+<p>{{"Uppercase : "+(name | uppercase) }}</p>
+<p>{{"Title Case : "+(name | titlecase) }}</p>
+<p>{{"Slicing : "+(name | slice:4) }}</p>
+
+<hr>
+
+<h1>Pipes for JSON Output</h1>
+<p>{{Student | json}}</p>
+
+<hr>
+
+<h1>Pipes for Numbers</h1>
+<p>{{"Orignal Number : "+no}}</p>
+<p>{{no | number : '1.2-3'}}</p>
+<p>{{no | number : '3.2-5'}}</p>
+<p>{{no | number : '3.4-5'}}</p>
+
+<hr>
+
+<h1>Pipes for Percentage</h1>
+<p>{{"Percent : "+(0.8912 | percent)}}</p>
+<p>{{"Percent with decimal : "+(0.7833496 | percent:'2.1-2')}}</p>
+
+<hr>
+
+<h1>Pipes for Currency</h1>
+<p>{{"Currency(USD) : "+(7683 | currency: 'USD')}}</p>
+<p>{{"Currency(INR) : "+(7834| currency:'INR')}}</p>
+<p>{{"Currency(JPY) : "+(7812 | currency:'JPY')}}</p>
+<p>{{"Currency(GBP) : "+(7854 | currency:'GBP')}}</p>
+
+<hr>
+
+<h1>Pipes for Date</h1>
+<p>{{"Today's Date : "+today}}</p>
+<p>{{"Full Date : "+(today | date: 'fullDate')}}</p>
+<p>{{"Short Date : "+(today | date: 'shortDate') }}</p>
+<p>{{"Short Time : "+(today | date: 'shortTime') }}</p>
+
+<hr>
