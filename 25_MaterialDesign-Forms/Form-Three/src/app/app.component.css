@@ -1,0 +1,28 @@
+.container {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.example-full-width {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 25px;
+}
+
+.example-radio-group {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.example-radio-button {
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 25px;
+}
+
+button{
+    margin-top: 35px;
+    width: 20%;
+    padding: 2px;
+}

@@ -1,0 +1,39 @@
+.container {
+  text-align: center;
+}
+
+.cont-one {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.inputText {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 50%;
+}
+
+.cont-two {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 25px;
+}
+
+.seatType {
+  width: 55%;
+}
+
+.cont-three {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 25px;
+}
+
+.radBtn {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+button {
+  margin-top: 25px;
+}

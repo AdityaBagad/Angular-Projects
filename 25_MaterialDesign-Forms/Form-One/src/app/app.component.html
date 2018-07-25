@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Angular 6 : Material Design Form - 1
+  </h1>
+  <h2>
+    <i>By - Aditya Bagad</i>
+  </h2>
+
+  <form class="example-form">
+
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Username"  name="username" [(ngModel)]="user_obj.username">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field>
+      <input matInput placeholder="Plassword" type="password" name="password" [(ngModel)]="user_obj.password">
+    </mat-form-field>
+
+    <br>
+
+    <button mat-raised-button color="primary" (click)="loginUser()" >Login</button>
+
+  </form>
+
+</div>

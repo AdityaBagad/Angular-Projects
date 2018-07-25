@@ -1,0 +1,40 @@
+<div class="container">
+
+  <!-- Car Name , Car Number , Car Color -->
+  <div class="cont-one">
+    <mat-form-field class="inputText">
+      <input matInput placeholder="Car Name" [(ngModel)]="cars_obj.carName" name="NameOfCar" #NameOfCar="ngModel" required>
+      <mat-error *ngIf="(!NameOfCar.valid)">Enter Car Name</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="inputText">
+      <input matInput placeholder="Car Number" [(ngModel)]="cars_obj.carNumber" name="NumberOfCar" #NumberOfCar="ngModel" required>
+      <mat-error *ngIf="(!NumberOfCar.valid)">Enter Car Number</mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="inputText">
+      <input matInput placeholder="Car Color" [(ngModel)]="cars_obj.carColor" name="ColorOfCar" #ColorOfCar="ngModel" required>
+      <mat-error *ngIf="(!ColorOfCar.valid)">Enter Car Color</mat-error>
+    </mat-form-field>
+  </div>
+
+  <!-- Number Of Seats -->
+  <div class="cont-two">
+    <mat-form-field class="seatType">
+      <mat-select placeholder="Number of Seats" [(ngModel)]="cars_obj.carSeats" name="SeatsOfCar" #SeatsOfCar="ngModel" required>
+        <mat-option *ngFor="let seat of numOfSeats" [value]="seat">{{seat}}</mat-option>
+      </mat-select>
+      <mat-error *ngIf="(!SeatsOfCar.valid)">Enter Car Seats</mat-error>
+    </mat-form-field>
+  </div>
+
+  <!-- Type Of Car -->
+  <div class="cont-three">
+    <mat-radio-group class="radGroup" [(ngModel)]="cars_obj.carType">
+      <mat-radio-button class="radBtn" *ngFor="let type of typeOfCar" [value]="type">{{ type }}</mat-radio-button>
+    </mat-radio-group>
+  </div>
+
+  <button mat-raised-button color="primary" (click)="submitCarDetails()">Submit Application</button>
+
+</div>

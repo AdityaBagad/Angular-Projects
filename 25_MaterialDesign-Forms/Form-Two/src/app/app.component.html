@@ -1,0 +1,63 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Angular 6 : Material Design Form - 2
+  </h1>
+  <h2>
+    <i>By - Aditya Bagad</i>
+  </h2>
+
+  <h1>Travel Portal</h1>
+
+  <div class="container">
+
+    <!-- Source and Destination -->
+    <div class="locationContainer">
+      <mat-form-field class="selectCity">
+        <mat-select placeholder="Source" [formControl]="citySource" required [(value)]="source">
+          <mat-option *ngFor="let city of cities" [value]="city.city_value" >
+            {{city.city_name}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="citySource.hasError('required')">Please choose Source City</mat-error>
+      </mat-form-field>
+      to
+      <mat-form-field class="selectCity">
+        <mat-select placeholder="Destination" [formControl]="cityDest" required [(value)]="destination">
+          <mat-option *ngFor="let city of cities" [value]="city.city_value">
+            {{city.city_name}}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="cityDest.hasError('required')">Please choose Destination City</mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- Date for Arrival and Departure -->
+    <div class="dateContainer">
+      <mat-form-field class="dateType">
+        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker1" placeholder="Choose a start date" (dateInput)="start($event)">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="dateType">
+        <input matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker2" placeholder="Choose a end date" (dateInput)="end($event)">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+    </div>
+
+    <!-- Radio Group for type of Seats -->
+    <div class="seatContainer">
+      <mat-radio-group [(ngModel)]="seat">
+        <mat-radio-button class="seatType" *ngFor="let seat of seats" [value]="seat.seat_value" >
+          {{ seat.seat_name }}
+        </mat-radio-button>
+      </mat-radio-group>    
+    </div>
+
+    <button mat-raised-button color="primary" (click)="searchFlights()">Search Flights</button>
+
+  </div>
+
+</div>
