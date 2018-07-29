@@ -35,3 +35,4 @@ npm install -g @angular/cli
 23. [Template Reference](https://github.com/AdityaBagad/Angular-Projects/tree/master/23_Template-Reference)
 24. [Pipes](https://github.com/AdityaBagad/Angular-Projects/tree/master/24_Pipes)
 25. [Material Design Forms](https://github.com/AdityaBagad/Angular-Projects/tree/master/25_MaterialDesign-Forms)
+26. [Firebase CRUD Operations](https://github.com/AdityaBagad/Angular-Projects/tree/master/26_Firebase-CRUD)
