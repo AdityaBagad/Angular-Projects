@@ -1,0 +1,61 @@
+<div class="row">
+
+  <div class="col">
+    <form #UpdateStudent="ngForm" (ngSubmit)="updateStudent()" name="addStudForm">
+      <div class="container-form">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Roll Number" required ngModel name="studRollNo" #ModelStudRollNo="ngModel"
+            [(ngModel)]="student.studentRollno">
+          <div class="alert alert-danger" *ngIf="(ModelStudRollNo.dirty || ModelStudRollNo.touched) && !ModelStudRollNo.valid">
+            <div *ngIf="ModelStudRollNo.errors.required">Enter Roll Number</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Name" required ngModel name="studName" #ModelStudName="ngModel"
+            [(ngModel)]="student.studentName">
+          <div class="alert alert-danger" *ngIf="(ModelStudName.dirty || ModelStudName.touched) && !ModelStudName.valid">
+            <div *ngIf="ModelStudName.errors.required">Enter Student Name</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Marks" required ngModel name="studMarks" #ModelStudMarks="ngModel"
+            [(ngModel)]="student.studentMarks">
+          <div class="alert alert-danger" *ngIf="(ModelStudMarks.dirty || ModelStudMarks.touched) && !ModelStudMarks.valid">
+            <div *ngIf="ModelStudMarks.errors.required">Enter Student Marks</div>
+          </div>
+        </div>
+        <div class="button-group">
+          <button type="button" class="btn btn-primary" (click)="updateStudentToFirestore()" [disabled]="!UpdateStudent.form.valid">Update Student</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="col">
+    <div class="container-table">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Roll Number</th>
+            <th scope="col">Name</th>
+            <th scope="col">Marks</th>
+            <th scope="col">Operation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of items | async">
+            <td>{{ item.Stud_Rollno}}</td>
+            <td>{{ item.Stud_Name }}</td>
+            <td>{{ item.Stud_Marks }}</td>
+            <td>
+              <div class="button-group">
+                <button type="button" class="btn btn-success btn-sm" (click)="updateStudent(item)">Update Student</button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>

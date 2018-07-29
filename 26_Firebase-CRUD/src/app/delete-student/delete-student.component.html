@@ -1,0 +1,24 @@
+<div class="container-table">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Roll Number</th>
+        <th scope="col">Name</th>
+        <th scope="col">Marks</th>
+        <th scope="col">Operation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of items | async">
+        <td>{{ item.Stud_Rollno}}</td>
+        <td>{{ item.Stud_Name }}</td>
+        <td>{{ item.Stud_Marks }}</td>
+        <td>
+          <div class="button-group">
+            <button type="button" class="btn btn-danger btn-sm" (click)="deleteStudent(item.id)">Delete Student</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
