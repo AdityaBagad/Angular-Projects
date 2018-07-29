@@ -1,16 +1,17 @@
+> **Concept of Routing is used in this application**.
+
 1. Display Students
 ![fbdisp](fbdisp.JPG "fbdisp")
 
-2. Add Student
+2. Add Student with Form validations
 ![fbadd](fbadd.JPG "fbadd")
 
 3. Delete Student
 ![fbdel](fbdel.JPG "fbdel")
 
-4. Update Student
+4. Update Student with Form Validations
 ![fbupdate](fbupdate.JPG "fbupdate")
 
-> Concept of Routing is used in this application.
 
 # FirebaseCRUD
 
