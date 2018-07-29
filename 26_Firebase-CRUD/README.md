@@ -1,6 +1,6 @@
 > **Concept of Routing is used in this application**.
 
-1. Display Students
+#### 1. Display Students
 ![fbdisp](fbdisp.JPG "fbdisp")
 
 2. Add Student with Form validations
