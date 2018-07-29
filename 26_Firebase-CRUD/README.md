@@ -3,13 +3,13 @@
 #### 1. Display Students
 ![fbdisp](fbdisp.JPG "fbdisp")
 
-2. Add Student with Form validations
+#### 2. Add Student with Form validations
 ![fbadd](fbadd.JPG "fbadd")
 
-3. Delete Student
+#### 3. Delete Student
 ![fbdel](fbdel.JPG "fbdel")
 
-4. Update Student with Form Validations
+#### 4. Update Student with Form Validations
 ![fbupdate](fbupdate.JPG "fbupdate")
 
 
