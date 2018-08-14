@@ -1,7 +1,7 @@
 <div class="row">
 
   <div class="col">
-    <form #UpdateStudent="ngForm" (ngSubmit)="updateStudent()" name="addStudForm">
+    <form #UpdateStudent="ngForm" (ngSubmit)="updateStudentToFirestore()" name="addStudForm">
       <div class="container-form">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Enter Roll Number" required ngModel name="studRollNo" #ModelStudRollNo="ngModel"

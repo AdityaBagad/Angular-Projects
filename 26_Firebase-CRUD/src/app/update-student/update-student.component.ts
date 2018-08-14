@@ -45,7 +45,7 @@ export class UpdateStudentComponent {
   }
 
   public updateStudentToFirestore() {
-    console.log(this.documentID);
+    //console.log(this.documentID);
     this.itemsCollection.doc(this.documentID).update({
       Stud_Name: this.student.studentName,
       Stud_Rollno: this.student.studentRollno,
