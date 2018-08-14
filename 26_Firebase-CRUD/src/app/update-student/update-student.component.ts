@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection } from 'angularfire2/firestore';
-import { Observable} from 'rxjs';
+import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { StudentsInfo } from '../studentInfo';
 
@@ -23,18 +23,14 @@ export class UpdateStudentComponent {
   constructor(private db: AngularFirestore) {
 
     this.itemsCollection = this.db.collection<StudentsInfo>('Stud_Info');
-    //this.items = this.itemsCollection.valueChanges();
 
-      // .snapshotChanges() returns a DocumentChangeAction[], which contains
-      // a lot of information about "what happened" with each change. If you want to
-      // get the data and the id use the map operator.
       this.items = this.itemsCollection.snapshotChanges().pipe(
-        map(changes => changes.map(a => {
-            const data = a.payload.doc.data() as StudentsInfo;
-            const id = a.payload.doc.id;
-            return { id, ...data}
-        })
-      ));
+        map(actions => actions.map(a => {
+          const data = a.payload.doc.data() as StudentsInfo;
+          const id = a.payload.doc.id;
+          return { id, ...data };
+        }))
+      );
   }
 
   // This variable stores the DocumentId of the selected collection 

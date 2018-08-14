@@ -7,12 +7,12 @@ export const environment = {
 
   // Add Access to firebase Projects
   firebase: {
-    apiKey: "---",
-    authDomain: "---",
-    databaseURL: "---",
-    projectId: "---",
-    storageBucket: "---",
-    messagingSenderId: "---"
+    apiKey: "AIzaSyAsFuxstNg26AAwK-4xZD3uWRMBMX0gpKE",
+    authDomain: "angularfire-86902.firebaseapp.com",
+    databaseURL: "https://angularfire-86902.firebaseio.com",
+    projectId: "angularfire-86902",
+    storageBucket: "angularfire-86902.appspot.com",
+    messagingSenderId: "742071550055"
   }
 };
 

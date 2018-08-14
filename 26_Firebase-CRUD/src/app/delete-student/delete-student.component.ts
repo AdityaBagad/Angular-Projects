@@ -29,7 +29,6 @@ export class DeleteStudentComponent  {
             return { id, ...data}
         })
       ));
-      
   }
 
   // Deleting a Student from Firestore
