@@ -34,7 +34,7 @@ export class UpdateStudentComponent {
   }
 
   // This variable stores the DocumentId of the selected collection 
-  public documentID: string;
+  private documentID: string;
 
   public updateStudent(st) {
     //console.log(st.id);
@@ -44,8 +44,8 @@ export class UpdateStudentComponent {
     this.documentID = st.id;
   }
 
-  public updateStudentToFirestore(docID: string) {
-    //console.log(this.documentID);
+  public updateStudentToFirestore() {
+    console.log(this.documentID);
     this.itemsCollection.doc(this.documentID).update({
       Stud_Name: this.student.studentName,
       Stud_Rollno: this.student.studentRollno,
